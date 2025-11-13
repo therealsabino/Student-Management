@@ -17,13 +17,20 @@ public class GestorAlunos {
        alunos.add(aluno);
     }
 
-    public Aluno SearchForStudentID(String StudendID){
-        for(Aluno a: alunos)
-            if(a: getStudentID().equals(StudendID);
+    public Aluno SearchForStudentID(String StudendID) {
+        for (Aluno a : alunos) {
+            if (a.getStudentID().equals(StudendID)) {
+                return a;
+            }
+        }
         return null;
     }
 
-
+    public void listAllAlunos(){
+        for(Aluno a: alunos){
+            System.out.println(a);
+        }
+    }
 
 
 }

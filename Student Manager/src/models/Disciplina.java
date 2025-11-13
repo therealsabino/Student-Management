@@ -25,6 +25,10 @@ public class Disciplina {
         this.professor = professor;
     }
 
+    public void addDisciplina(Disciplina disciplina){this.name = name;}
+
+    public void removeDisciplina(Disciplina disciplina){this.name = name;}
+
     @Override
     public String toString(){
         return name + "( Prof: " + getProfessor() + ")";
